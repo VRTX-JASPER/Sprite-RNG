@@ -1,1 +1,91 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background: #111827;
+    color: white;
+}
+
+.game {
+    width: 90%;
+    max-width: 600px;
+
+    text-align: center;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    background: #1f2937;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 42px;
+    margin-top: 0;
+}
+
+.luck {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.result {
+    min-height: 180px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+
+    border-radius: 20px;
+
+    background: #111827;
+
+    font-size: 28px;
+    font-weight: bold;
+}
+
+button {
+    width: 200px;
+    padding: 18px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: #6366f1;
+    color: white;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.stats {
+    margin-top: 25px;
+
+    font-size: 18px;
+
+    color: #d1d5db;
+}
