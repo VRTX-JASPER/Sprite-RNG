@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>My RNG Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <h1>🎰 MY RNG</h1>
+
+        <div class="luck">
+            🍀 Luck: <span id="luck">1.00x</span>
+        </div>
+
+        <div id="result" class="result">
+            Roll to find something!
+        </div>
+
+        <button id="rollButton" onclick="roll()">
+            ROLL
+        </button>
+
+        <div class="stats">
+            Rolls: <span id="rolls">0</span>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
