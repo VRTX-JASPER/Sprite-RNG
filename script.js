@@ -3,27 +3,32 @@ let rolls = 0;
 const items = [
     {
         name: "Common",
-        chance: 60
+        chance: 60,
+        sprite: "assets/sprites/common.png"
     },
 
     {
         name: "Uncommon",
-        chance: 25
+        chance: 25,
+        sprite: "assets/sprites/uncommon.png"
     },
 
     {
         name: "Rare",
-        chance: 10
+        chance: 10,
+        sprite: "assets/sprites/rare.png"
     },
 
     {
         name: "Epic",
-        chance: 4
+        chance: 4,
+        sprite: "assets/sprites/epic.png"
     },
 
     {
         name: "Legendary",
-        chance: 1
+        chance: 1,
+        sprite: "assets/sprites/legendary.png"
     }
 ];
 
@@ -44,10 +49,25 @@ function roll() {
 
         if (random <= total) {
 
-            document.getElementById("result").textContent =
-                "✨ " + item.name + " ✨";
+            showItem(item);
 
             break;
         }
     }
+}
+
+
+function showItem(item) {
+
+    const spriteContainer =
+        document.getElementById("spriteContainer");
+
+    const itemName =
+        document.getElementById("itemName");
+
+    spriteContainer.innerHTML =
+        `<img id="spriteImage" src="${item.sprite}" alt="${item.name}">`;
+
+    itemName.textContent =
+        "✨ " + item.name + " ✨";
 }
