@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
 }
@@ -18,7 +19,7 @@ body {
 
 .game {
     width: 90%;
-    max-width: 600px;
+    max-width: 650px;
 
     text-align: center;
 
@@ -42,7 +43,7 @@ h1 {
 }
 
 .result {
-    min-height: 300px;
+    min-height: 380px;
 
     display: flex;
     flex-direction: column;
@@ -57,8 +58,8 @@ h1 {
 }
 
 #spriteContainer {
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 
     display: flex;
     justify-content: center;
@@ -86,12 +87,20 @@ h1 {
 }
 
 #itemName {
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#rarity {
+    margin-top: 8px;
+
+    font-size: 20px;
     font-weight: bold;
 }
 
 button {
-    width: 200px;
+    width: 220px;
+
     padding: 18px;
 
     border: none;
@@ -104,6 +113,8 @@ button {
     font-weight: bold;
 
     cursor: pointer;
+
+    transition: transform 0.15s;
 }
 
 button:hover {
@@ -121,3 +132,4 @@ button:active {
 
     color: #d1d5db;
 }
+```
