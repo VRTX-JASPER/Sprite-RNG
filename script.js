@@ -1,35 +1,139 @@
+```javascript
 let rolls = 0;
 
 const items = [
-    {
-        name: "Common",
-        chance: 60,
-        sprite: "assets/sprites/common.png"
-    },
+
+    // =====================
+    // RARE — SPRITES 1-8
+    // =====================
 
     {
-        name: "Uncommon",
-        chance: 25,
-        sprite: "assets/sprites/uncommon.png"
-    },
-
-    {
-        name: "Rare",
+        name: "Sprite 1",
+        rarity: "Rare",
         chance: 10,
-        sprite: "assets/sprites/rare.png"
+        sprite: "assets/sprites/sprite_1.png"
     },
 
     {
-        name: "Epic",
-        chance: 4,
-        sprite: "assets/sprites/epic.png"
+        name: "Sprite 2",
+        rarity: "Rare",
+        chance: 10,
+        sprite: "assets/sprites/sprite_2.png"
     },
 
     {
-        name: "Legendary",
-        chance: 1,
-        sprite: "assets/sprites/legendary.png"
+        name: "Sprite 3",
+        rarity: "Rare",
+        chance: 10,
+        sprite: "assets/sprites/sprite_3.png"
+    },
+
+    {
+        name: "Sprite 4",
+        rarity: "Rare",
+        chance: 10,
+        sprite: "assets/sprites/sprite_4.png"
+    },
+
+    {
+        name: "Sprite 5",
+        rarity: "Rare",
+        chance: 10,
+        sprite: "assets/sprites/sprite_5.png"
+    },
+
+    {
+        name: "Sprite 6",
+        rarity: "Rare",
+        chance: 10,
+        sprite: "assets/sprites/sprite_6.png"
+    },
+
+    {
+        name: "Sprite 7",
+        rarity: "Rare",
+        chance: 10,
+        sprite: "assets/sprites/sprite_7.png"
+    },
+
+    {
+        name: "Sprite 8",
+        rarity: "Rare",
+        chance: 10,
+        sprite: "assets/sprites/sprite_8.png"
+    },
+
+
+    // =====================
+    // EPIC — SPRITES 9-12
+    // =====================
+
+    {
+        name: "Sprite 9",
+        rarity: "Epic",
+        chance: 3,
+        sprite: "assets/sprites/sprite_9.png"
+    },
+
+    {
+        name: "Sprite 10",
+        rarity: "Epic",
+        chance: 3,
+        sprite: "assets/sprites/sprite_10.png"
+    },
+
+    {
+        name: "Sprite 11",
+        rarity: "Epic",
+        chance: 3,
+        sprite: "assets/sprites/sprite_11.png"
+    },
+
+    {
+        name: "Sprite 12",
+        rarity: "Epic",
+        chance: 3,
+        sprite: "assets/sprites/sprite_12.png"
+    },
+
+
+    // ==========================
+    // LEGENDARY — SPRITES 13-14
+    // ==========================
+
+    {
+        name: "Sprite 13",
+        rarity: "Legendary",
+        chance: 2,
+        sprite: "assets/sprites/sprite_13.png"
+    },
+
+    {
+        name: "Sprite 14",
+        rarity: "Legendary",
+        chance: 2,
+        sprite: "assets/sprites/sprite_14.png"
+    },
+
+
+    // =====================
+    // MYTHIC — SPRITES 15-16
+    // =====================
+
+    {
+        name: "Sprite 15",
+        rarity: "Mythic",
+        chance: 0.5,
+        sprite: "assets/sprites/sprite_15.png"
+    },
+
+    {
+        name: "Sprite 16",
+        rarity: "Mythic",
+        chance: 0.5,
+        sprite: "assets/sprites/sprite_16.png"
     }
+
 ];
 
 
@@ -65,9 +169,21 @@ function showItem(item) {
     const itemName =
         document.getElementById("itemName");
 
-    spriteContainer.innerHTML =
-        `<img id="spriteImage" src="${item.sprite}" alt="${item.name}">`;
+    const rarity =
+        document.getElementById("rarity");
 
-    itemName.textContent =
-        "✨ " + item.name + " ✨";
+
+    spriteContainer.innerHTML = `
+        <img
+            id="spriteImage"
+            src="${item.sprite}"
+            alt="${item.name}"
+        >
+    `;
+
+
+    itemName.textContent = item.name;
+
+    rarity.textContent = item.rarity;
 }
+```
