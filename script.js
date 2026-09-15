@@ -1,4 +1,3 @@
-```javascript
 let rolls = 0;
 
 const items = [
@@ -186,4 +185,3 @@ function showItem(item) {
 
     rarity.textContent = item.rarity;
 }
-```
